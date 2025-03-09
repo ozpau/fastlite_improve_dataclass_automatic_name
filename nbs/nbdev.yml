@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "fastlite_improve_dataclass_automatic_name"
+  site-url: "https://ozpau.github.io/fastlite_improve_dataclass_automatic_name"
+  description: "Proposal for improving automatic naming scheme for fastlite dataclasses"
+  repo-branch: main
+  repo-url: "https://github.com/ozpau/fastlite_improve_dataclass_automatic_name"
