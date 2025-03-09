@@ -1,0 +1,72 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "fastlite_improve_dataclass_automatic_name",
+    "section": "",
+    "text": "This file will become your README and also the index of your documentation.",
+    "crumbs": [
+      "fastlite_improve_dataclass_automatic_name"
+    ]
+  },
+  {
+    "objectID": "index.html#developer-guide",
+    "href": "index.html#developer-guide",
+    "title": "fastlite_improve_dataclass_automatic_name",
+    "section": "Developer Guide",
+    "text": "Developer Guide\nIf you are new to using nbdev here are some useful pointers to get you started.\n\nInstall fastlite_improve_dataclass_automatic_name in Development mode\n# make sure fastlite_improve_dataclass_automatic_name package is installed in development mode\n$ pip install -e .\n\n# make changes under nbs/ directory\n# ...\n\n# compile to have changes apply to fastlite_improve_dataclass_automatic_name\n$ nbdev_prepare",
+    "crumbs": [
+      "fastlite_improve_dataclass_automatic_name"
+    ]
+  },
+  {
+    "objectID": "index.html#usage",
+    "href": "index.html#usage",
+    "title": "fastlite_improve_dataclass_automatic_name",
+    "section": "Usage",
+    "text": "Usage\n\nInstallation\nInstall latest from the GitHub repository:\n$ pip install git+https://github.com/ozpau/fastlite_improve_dataclass_automatic_name.git\nor from conda\n$ conda install -c ozpau fastlite_improve_dataclass_automatic_name\nor from pypi\n$ pip install fastlite_improve_dataclass_automatic_name\n\n\nDocumentation\nDocumentation can be found hosted on this GitHub repository’s pages. Additionally you can find package manager specific guidelines on conda and pypi respectively.",
+    "crumbs": [
+      "fastlite_improve_dataclass_automatic_name"
+    ]
+  },
+  {
+    "objectID": "index.html#how-to-use",
+    "href": "index.html#how-to-use",
+    "title": "fastlite_improve_dataclass_automatic_name",
+    "section": "How to use",
+    "text": "How to use\nFill me in please! Don’t forget code examples:\n\n1+1\n\n2",
+    "crumbs": [
+      "fastlite_improve_dataclass_automatic_name"
+    ]
+  },
+  {
+    "objectID": "core.html",
+    "href": "core.html",
+    "title": "core",
+    "section": "",
+    "text": "from fastlite import *\ndb = database(\":memory:\")\ndb.q(\"CREATE TABLE table_with_underscores (ID INTEGER)\")\n\n[]\ndb.t\n\ntable_with_underscores",
+    "crumbs": [
+      "core"
+    ]
+  },
+  {
+    "objectID": "core.html#underscores",
+    "href": "core.html#underscores",
+    "title": "core",
+    "section": "Underscores",
+    "text": "Underscores\nNotice that underscores are not handled properly:\n\na = db.t.table_with_underscores.dataclass()\na\n\nfastlite.core.Table_With_Underscores\n\n\n\na()\n\nTable_With_Underscores(ID=UNSET)",
+    "crumbs": [
+      "core"
+    ]
+  },
+  {
+    "objectID": "core.html#plurals",
+    "href": "core.html#plurals",
+    "title": "core",
+    "section": "Plurals",
+    "text": "Plurals\nI would like to have a table named users, but dataclasses named User. How would I achive that?\n\ndb.q(\"CREATE TABLE users (ID INTEGER)\")\n\n[]\n\n\n\ndb.t\n\ntable_with_underscores, users\n\n\n\nu = db.t.users.dataclass()\nu\n\nfastlite.core.Users\n\n\n\nu()\n\nUsers(ID=UNSET)",
+    "crumbs": [
+      "core"
+    ]
+  }
+]
